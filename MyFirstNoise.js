@@ -3,6 +3,9 @@ function setup() {
     background(33, 65, 33);
     canvas.parent('canvasForHtml');
 
+}
+
+function draw() {
     randomSeed(1);
     for (var j = 0; j < height; j++){
         var points = [];
@@ -18,7 +21,4 @@ function setup() {
             line(points[i].x, points[i].y, points[i+1].x, points[i+1].y);
         }
     }
-}
-
-function draw() {
 }
