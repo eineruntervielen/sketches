@@ -1,5 +1,5 @@
 function setup() {
-    let c = createCanvas(3000, 3000);
+    let c = createCanvas(600, 600);
 //    background(0, 161, 219);
     background(33, 65, 33);
 
@@ -17,7 +17,6 @@ function setup() {
             line(points[i].x, points[i].y, points[i+1].x, points[i+1].y);
         }
     }
-    saveCanvas(c, 'myNoise', 'png');
 }
 
 function draw() {
