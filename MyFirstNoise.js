@@ -1,8 +1,9 @@
 function setup() {
-    let c = createCanvas(600, 600);
-//    background(0, 161, 219);
+    let canvas = createCanvas(600, 600);
     background(33, 65, 33);
+    canvas.parent('canvasForHtml');
 
+    randomSeed(1);
     for (var j = 0; j < height; j++){
         var points = [];
         for (var i = 0; i < width; i++){
